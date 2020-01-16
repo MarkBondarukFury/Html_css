@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*--------------------------------------------------------*/
+.content {
+    background-color: #de2b24;
+    color: white;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif
+}
+.content h1 {
+    padding-top: 8%;
+    font-size: 2em;
+}
+.content h3 {
+    font-weight: 400;
+    font-stretch: condensed;
+    opacity: .7;
+    padding-bottom: .5em;
+}
+.content hr {
+    width: 3.5%; 
+    background-color: white;
+    border: none;
+    height: 0.30em;
+    align-self: center;
+    display: block;
+    margin-left: calc(50vw - 1.75%);
+}
+.content section.images {
+    display: inline-block;
+    margin-top: 5%;
+    font-size: 0;
+    width: 1200px;
+    overflow: hidden;
+}
+.content section.images .photo_box {
+    display: inline-block;
+    width: 256px;
+    height: 256px;
+    overflow: hidden;
+    position: relative;
+    font-size: initial;
+}
+.content section.images .photo_box img {
+    display: inline-block;
+    visibility: visible;
+}
+.content section.images .telegram_box {
+    background-color: #f35e58;
+    width: 256px;
+    height: 256px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: initial;
+}
+.content section.images .telegram_box img {
+   padding-top: 25%;
+   padding-bottom: 10%;
+   width: initial;
+   height: initial;
+   align-self: center;
+}
+#photo1 {
+    margin: 0 0 0 -130px;
+}
+#photo2 {
+    margin: 0 -75px 0 -75px;
+}
+#photo3 {
+    margin: 0 -65px 0 -75px;
+}
+#photo4 {
+    margin: 0 -80px 0 -70px;
+}
+.content section.images .photo:hover {
+    transition: all 1s ease-in-out;
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+/*---------------------------------------------------------*/
+.analysis {
+    background-color: #1286c7;
+    color: white;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+.analysis h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding-top: 3em;
+}
+.analysis h4 {
+    font-weight: normal;
+    font-stretch: condensed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.analysis button.expand_and_collapse {
+    background-color:  #1286c7;
+    color: white;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-width: 2.5px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    display: block;
+    position: relative;
+    margin-left: calc(50% - 1.9rem);
+}
+.analysis .button_image {
+    color:black;
+    position: relative;
+    display: block;
+}
+.analysis .button_image::after {
+    content: "";
+    position: absolute;
+    border: .2em solid white; 
+    transform: rotate(45deg);
+    bottom: 0;
+    left: calc(50% - .6em);
+    bottom: 1.5em;
+    border-top: none;
+    border-left: none;
+    width: 1em;
+    height: 1em;
+}
+.analysis .triangle_block {
+    color:white;
+    position: relative;
+    display: block;
+}
+.analysis .triangle_block::after {
+    content: "";
+    position: absolute; 
+    left: calc(50% - 2em);
+    bottom: 0; 
+    border: 2em solid transparent; 
+    border-bottom: 2em solid;
+}
+.analysis .form {
+    width: 38rem;
+    height: 50%;
+    background-color: white;
+    display: inline-block;
+    color: #858585;
+    border-radius: 3px;
+    margin-top: 2em;
+}
+.analysis button.close {
+    background-color: #d42e1e;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    display: inline-block;
+    font-size: 1.2em;
+    margin-left: 36.5rem;
+    margin-top: -1.5em;
+    margin-bottom: -1.5em;
+}
+.analysis button.close::placeholder {
+    color: white;
+}
+.analysis .form article.info {
+    display: block;
+    margin: 2em 3.5em 1em;
+    font-size: .86em;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+.analysis .form .input_fields {
+    margin-top: 2em;
+}
+.analysis .form .input_fields input {
+    height: 3em;
+    width: 25rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #b8b8b8;
+    border-width: thin;
+    color: #aeaeae;
+    padding: .3em 0 .3em 1em;
+    margin: .25em 0;
+    font-size: 0.9em;
+}
+.analysis .form .input_fields input::placeholder {
+    color: #bdbdbd;
+}
+.analysis .form input:hover {
+    border-color: #45729e;
+    border-width: 1px;
+}
+.analysis button.submit {
+    background-color: #e02b24;
+    color: #ffddde;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: .86em;
+    padding: 1em 2em;
+    margin-top: 2.5em;
+}
+/*---------------------------------------------------------*/
+.feedback {
+    background-color: #2a2a2a;
+    color: white;
+    text-align: center;
+    width: 100vw;
+    height: 50vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.feedback h1 {
+    font-size: 1.8em;
+    padding-top: 3em;
+    padding-bottom: .5em;
+}
+.feedback h4 {
+    color : #c8c8c8;
+    font-weight: normal;
+    font-stretch: condensed;
+    padding-top: 1.5em;
+    padding-bottom: .5em;
+}
+.feedback button {
+    background-color: inherit;
+    border-style: solid;
+    color: white;
+    border-color: #515151;
+    width: 150px;
+    height: 50px;
+    margin-top: .5em;
+    margin-left: .5em;
+    border-radius: 3px;
+    font-size: 1.1em;
+}
+.feedback .buttons {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.feedback .buttons button {
+    border-color: #505050;
+    border-width: 2px;
+    width: 44px;
+    height: 44px;
+    vertical-align: top;
+}
+.feedback .buttons button:hover {
+    border-color: #bf3835;
+}
+.feedback input {
+    background-color: #515151;
+    border: none;
+    height: 3em;
+    width: 50em;
+    padding-left: 1em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    color: inherit;
+}
+.feedback input::placeholder {
+    color: #cfcfcf;
+}
+footer {
+    background-color: #515151;
+    text-align: center;
+    height: 70px;
+    color: #a4a4a4;
+}
+footer p {
+    padding-top: 1.5em;
+    font-size: 1.05em;
+}
